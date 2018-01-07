@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour
     public float moveSpeed;
     private Rigidbody rb;
 
+    public AudioClip coinGet;
 
 
     void Start()
@@ -28,13 +29,24 @@ public class Ball : MonoBehaviour
     {
 
         float moveH = Input.GetAxis("Horizontal");
-      Debug.Log(moveH);
+        Debug.Log(moveH);
         float moveV = Input.GetAxis("Vertical");
-      Debug.Log(moveV);
+        Debug.Log(moveV);
         Vector3 movement = new Vector3(moveH, 0, moveV);
         rb.AddForce(movement * moveSpeed);
 
     }
-}
+
+
+            void OnTriggerEnter(Collider other){
+            if (other.CompareTag("coin")){
+                Destroy(other.gameObject);
+                AudioSource.PlayClipAtPoint(coinGet, transform.position);
+            }
+        }
+
+    }
+            
+
 
 
