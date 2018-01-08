@@ -24,7 +24,7 @@ public class tairyouseisan : MonoBehaviour
         for (int i = 0; i < createNum; i++)
         {
             //生成
-            Instantiate(_prefab);
+            Instantiate(prefab);
         }
 
         

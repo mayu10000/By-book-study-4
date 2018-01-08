@@ -13,6 +13,9 @@ public class Ball : MonoBehaviour
 
     public AudioClip coinGet;
 
+    public AudioClip accelPoint;
+
+
 
     void Start()
     {
@@ -38,14 +41,25 @@ public class Ball : MonoBehaviour
     }
 
 
-            void OnTriggerEnter(Collider other){
-            if (other.CompareTag("coin")){
-                Destroy(other.gameObject);
-                AudioSource.PlayClipAtPoint(coinGet, transform.position);
-            }
-        }
+    void OnTriggerEnter(Collider other) {
+        if (other.CompareTag("coin")) {
+            Destroy(other.gameObject);
+            AudioSource.PlayClipAtPoint(coinGet, transform.position);
 
-    }
+
+        }
+        else if (other.CompareTag("Accel"))
+        {
+            rb.AddForce(new Vector3(0, 10, 30), ForceMode.VelocityChange);
+            AudioSource.PlayClipAtPoint(accelPoint, transform.position);
+
+                 }
+        
+             }
+
+         }
+
+    
             
 
 
