@@ -10,10 +10,12 @@ public class Ball : MonoBehaviour
 
     public float moveSpeed;
     private Rigidbody rb;
-
     public AudioClip coinGet;
-
     public AudioClip accelPoint;
+
+    public AudioClip warpPoint;
+
+
 
 
 
@@ -41,11 +43,15 @@ public class Ball : MonoBehaviour
     }
 
 
-    void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("coin")) {
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("coin"))
+        {
             Destroy(other.gameObject);
             AudioSource.PlayClipAtPoint(coinGet, transform.position);
 
+
+            //  条件　２
 
         }
         else if (other.CompareTag("Accel"))
@@ -53,14 +59,28 @@ public class Ball : MonoBehaviour
             rb.AddForce(new Vector3(0, 10, 30), ForceMode.VelocityChange);
             AudioSource.PlayClipAtPoint(accelPoint, transform.position);
 
-                 }
-        
-             }
+          
+            
+            //  条件　３
 
-         }
+        }
+
+        else if (other.CompareTag("Warp"))
+        {
+            transform.position = new Vector3(-3, 1, -3);
+            AudioSource.PlayClipAtPoint(warpPoint, transform.position);
+
+                 }
+            }
+
+        }
 
     
-            
+ 
+
+
+
+
 
 
 
