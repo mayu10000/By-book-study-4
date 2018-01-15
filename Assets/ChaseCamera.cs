@@ -9,7 +9,9 @@ public class ChaseCamera : MonoBehaviour
     public GameObject target;
 
     //  offset という名前の箱を作る
-    private Vector3 offset ;
+    // offset = transform.position - target.transform.position ;
+
+    public Vector3 offset ;
 
     
 
@@ -18,7 +20,7 @@ public class ChaseCamera : MonoBehaviour
     {
 
         // 箱の中にデータを入れる
-        offset = transform.position - target.transform.position ;
+      //  offset = transform.position - target.transform.position ;
 
     }
 
