@@ -12,10 +12,9 @@ public class Ball : MonoBehaviour
     private Rigidbody rb;
     public AudioClip coinGet;
     public AudioClip accelPoint;
-
     public AudioClip warpPoint;
 
-
+    public AudioClip scalePoint;
 
 
 
@@ -59,8 +58,8 @@ public class Ball : MonoBehaviour
             rb.AddForce(new Vector3(0, 10, 30), ForceMode.VelocityChange);
             AudioSource.PlayClipAtPoint(accelPoint, transform.position);
 
-          
-            
+
+
             //  条件　３
 
         }
@@ -70,8 +69,20 @@ public class Ball : MonoBehaviour
             transform.position = new Vector3(-3, 1, -3);
             AudioSource.PlayClipAtPoint(warpPoint, transform.position);
 
-                 }
+
+
+
+            //  条件　４
+        }
+
+　　　　　else if (other.CompareTag("Scale"))
+            {
+                transform.localScale = new Vector3(2, 2, 2);
+                AudioSource.PlayClipAtPoint(scalePoint, transform.position);
+
+
             }
+        }
 
         }
 

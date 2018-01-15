@@ -8,19 +8,17 @@ public class ChaseCamera : MonoBehaviour
     // 変数の定義　（target という名前の箱を作る）
     public GameObject target;
 
-    //  ofset という名前の箱を作る
-    private Vector3 offset;
+    //  offset という名前の箱を作る
+    private Vector3 offset ;
 
-
-
-
+    
 
     // Use this for initialization
     void Start()
     {
 
         // 箱の中にデータを入れる
-        offset = transform.position - target.transform.position;
+        offset = transform.position - target.transform.position ;
 
     }
 
@@ -29,7 +27,12 @@ public class ChaseCamera : MonoBehaviour
     {
 
 
-        transform.position = target.transform.position + offset;
+          transform.position = target.transform.position + offset;
+
+
+        //  transform.position = target.transform.position ;
+
+        Debug.Log(offset);
 
     }
 }
