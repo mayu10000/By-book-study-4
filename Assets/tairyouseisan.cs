@@ -14,10 +14,11 @@ public class tairyouseisan : MonoBehaviour
     public GameObject prefab;
 
 
+
+
+
     //作成する数(インスペクタから設定)　
     public int createNum;
-
-
 
     void Start () {
 
@@ -35,3 +36,4 @@ public class tairyouseisan : MonoBehaviour
 		
 	}
 }
+

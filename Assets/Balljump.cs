@@ -11,11 +11,10 @@ public class Balljump : MonoBehaviour
     public AudioClip coinGet;
     public AudioClip accelPoint;
     public AudioClip warpPoint;
-
     public AudioClip scalePoint;
-
     public float jumpSpeed;
 
+    public bool isJumping = false;
 
 
 
@@ -41,9 +40,18 @@ public class Balljump : MonoBehaviour
         rb.AddForce(movement * moveSpeed);
 
 
-        if (Input.GetButtonDown("Jump"))
-        {
+        //   if (Input.GetButtonDown("Jump"))
+
+        if (Input.GetButtonDown("Jump") && isJumping == false)
+        
+
+
+
+            {
             rb.velocity = Vector3.up * jumpSpeed;
+
+            isJumping = true;
+
         }
     }
 }
