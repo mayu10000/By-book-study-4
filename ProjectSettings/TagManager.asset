@@ -8,6 +8,7 @@ TagManager:
   - Accel
   - Warp
   - Scale
+  - Floor
   layers:
   - Default
   - TransparentFX

@@ -43,18 +43,35 @@ public class Balljump : MonoBehaviour
         //   if (Input.GetButtonDown("Jump"))
 
         if (Input.GetButtonDown("Jump") && isJumping == false)
-        
 
 
 
-            {
+
+        {
             rb.velocity = Vector3.up * jumpSpeed;
 
             isJumping = true;
 
+               }
+          }
+
+        void OnCollisionEnter(Collision other)
+        {
+            if (other.gameObject.CompareTag("Floor"))
+            {
+                isJumping = false;
+            }
         }
     }
-}
+
+
+
+
+
+
+
+
+
 
 
 
