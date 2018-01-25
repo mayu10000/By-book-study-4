@@ -28,6 +28,10 @@ public class tairyouseisan : MonoBehaviour
             Instantiate(prefab);
         }
 
+
+        //  transform.positionをDebug.Log
+        Debug.Log(transform.position) ;
+
         
     }
 	

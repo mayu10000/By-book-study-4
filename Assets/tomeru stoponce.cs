@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class tomerustoponce : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    //     public int[] array1;
+    //     public int[] array2;
+
+
+
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

@@ -9,6 +9,8 @@ TagManager:
   - Warp
   - Scale
   - Floor
+  - apple200
+  - applekago
   layers:
   - Default
   - TransparentFX
