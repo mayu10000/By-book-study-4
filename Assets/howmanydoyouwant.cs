@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bowmanydoyouwant : MonoBehaviour {
+public class howmanydoyouwant : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

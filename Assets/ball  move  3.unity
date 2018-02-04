@@ -2828,7 +2828,23 @@ Prefab:
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 65407498171451748, guid: 7a4fc417a48a37a478ed6dcf14d732ea,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23835177164628578, guid: 7a4fc417a48a37a478ed6dcf14d732ea,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23480792724347948, guid: 7a4fc417a48a37a478ed6dcf14d732ea,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 54204097079536710, guid: 7a4fc417a48a37a478ed6dcf14d732ea, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 7a4fc417a48a37a478ed6dcf14d732ea, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &352568812
@@ -8616,6 +8632,26 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1168910355 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1199730588236074, guid: 7a4fc417a48a37a478ed6dcf14d732ea,
+    type: 2}
+  m_PrefabInternal: {fileID: 341762229}
+--- !u!54 &1168910357
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1168910355}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1171144766
 GameObject:
   m_ObjectHideFlags: 0
