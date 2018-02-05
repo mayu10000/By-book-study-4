@@ -2995,6 +2995,7 @@ GameObject:
   - component: {fileID: 353661665}
   - component: {fileID: 353661667}
   - component: {fileID: 353661666}
+  - component: {fileID: 353661668}
   m_Layer: 0
   m_Name: "\u958B\u3044\u305F\u7DDA\u5F62\u72B6\u306E\u6383\u5F15\u4F53"
   m_TagString: apple200
@@ -3058,6 +3059,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 353661664}
   m_Mesh: {fileID: 4300000, guid: 8933cd617bc95864c9e451029cf6d3ee, type: 3}
+--- !u!135 &353661668
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353661664}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5740625
+  m_Center: {x: 0.23031247, y: 0.056169987, z: 0}
 --- !u!1 &370554161
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,6 +3081,7 @@ GameObject:
   - component: {fileID: 370554162}
   - component: {fileID: 370554164}
   - component: {fileID: 370554163}
+  - component: {fileID: 370554165}
   m_Layer: 0
   m_Name: "\u958B\u3044\u305F\u7DDA\u5F62\u72B6\u306E\u56DE\u8EE2\u4F53"
   m_TagString: Untagged
@@ -3103,7 +3117,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f22ed418b332d64429459df9dcef52c4, type: 2}
+  - {fileID: 2100000, guid: 7117f1ef66a42a24b88e80978a9d0e47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3130,6 +3144,20 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 370554161}
+  m_Mesh: {fileID: 4300000, guid: 595bc66486f7ad645a1342e5a1505964, type: 3}
+--- !u!64 &370554165
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 370554161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: 595bc66486f7ad645a1342e5a1505964, type: 3}
 --- !u!1 &376912655
 GameObject:
