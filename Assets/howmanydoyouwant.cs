@@ -15,9 +15,10 @@ public class howmanydoyouwant : MonoBehaviour
     //作成する数(インスペクタから設定)　
     public int createNum;
 
+    // public void CreateFromInput();
 
 
-    void aaa()
+    void CreateFromInput()
     {
 
         for (int i = 0; i < createNum; i++)
@@ -46,7 +47,9 @@ public class howmanydoyouwant : MonoBehaviour
     {
 
         // aaaa() の中に入れた処理は多分 Start() で呼び出したいのだろうからここから呼び出しておく
-        aaa();
+        CreateFromInput();
+        // Create aaa();
+
 
     }
 
