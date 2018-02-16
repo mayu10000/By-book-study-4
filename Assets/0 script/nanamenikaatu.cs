@@ -21,8 +21,12 @@ public class nanamenikaatu : MonoBehaviour {
         // Update is called once per frame
         void Update()
         {
-            this.myRigidbody.AddForce(new Vector3(0, -1.0f, 1.0f) * this.forwardForce);
-        }
+         //   this.myRigidbody.AddForce(new Vector3(0, -1.0f,  1.0f) * this.forwardForce);
+
+              this.myRigidbody.AddForce(new Vector3(0, -1.0f, -1.0f) * this.forwardForce);
+
+
+    }
     }
 
 
