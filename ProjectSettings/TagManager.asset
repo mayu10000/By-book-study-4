@@ -11,6 +11,8 @@ TagManager:
   - Floor
   - apple200
   - applekago
+  - myRigidbody
+  - Rigidbody
   layers:
   - Default
   - TransparentFX
