@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//  public GameObject ;
+
 public class skiercontroller : MonoBehaviour {
 
       Rigidbody2D rigid2D;
-   // Rigidbody3D rigid3D;
+    // Rigidbody3D rigid3D;
 
+  
 
-    Animator animator;
+    Animator animator　;
 
 
     
@@ -26,6 +30,18 @@ public class skiercontroller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+
+        // ジャンプする  spaceキー
+
+        if (Input.GetKeyDown(KeyCode.Space) &&
+            this.rigid2D.velocity.y == 0)
+        {
+            this.animator.SetTrigger("JumpTrigger");
+            this.rigid2D.AddForce(transform.up * jumpForce);
+        }
+
+
 
         // 左右移動
         int key = 0;
