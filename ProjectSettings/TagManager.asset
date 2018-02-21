@@ -13,6 +13,8 @@ TagManager:
   - applekago
   - myRigidbody
   - Rigidbody
+  - pointgate
+  - jumpstage
   layers:
   - Default
   - TransparentFX
