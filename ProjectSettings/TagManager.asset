@@ -15,6 +15,7 @@ TagManager:
   - Rigidbody
   - pointgate
   - jumpstage
+  - GoalCusudama
   layers:
   - Default
   - TransparentFX
