@@ -7,7 +7,7 @@ public class nanamenikaatu2 : MonoBehaviour {
     Rigidbody myRigidbody;
 
     //前進するための力（追加）
-    private float forwardForce = 800.0f;
+    private float forwardForce = 200.0f;
 
 
 
