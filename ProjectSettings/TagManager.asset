@@ -16,6 +16,7 @@ TagManager:
   - pointgate
   - jumpstage
   - GoalCusudama
+  - kobugetpoint
   layers:
   - Default
   - TransparentFX
