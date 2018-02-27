@@ -10,7 +10,6 @@ public class nanamenikaatu2 : MonoBehaviour {
     private float forwardForce = 800.0f;
 
 
-
     // Use this for initialization
     void Start () {
 
