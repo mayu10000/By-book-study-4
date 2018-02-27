@@ -137,7 +137,7 @@ public class skiercontroller2 : MonoBehaviour
         Debug.Log("Hi  hello2");
 
         //ゴール地点に到達した場合（追加）
-        if (other.gameObject.tag == "GoalTag")
+        if (other.gameObject.tag == "GoalKusudama")
         {
             this.isEnd = true;
 
@@ -155,13 +155,13 @@ public class skiercontroller2 : MonoBehaviour
 
 
             //こぶ　に衝突した場合（追加）
-            if (other.gameObject.tag == "cobugetpoint")
+            if (other.gameObject.tag == "kobugetpoint")
             {
 
 
 
             //パーティクルを再生（追加）
-            GetComponent<ParticleSystem>().Play();
+        //    GetComponent<ParticleSystem>().Play();
 
             
             // スコアを加算(追加)
