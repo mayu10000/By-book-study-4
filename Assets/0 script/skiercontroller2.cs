@@ -143,7 +143,7 @@ public class skiercontroller2 : MonoBehaviour
 
 
             //stateTextにGAME CLEARを表示（追加）
-            this.stateText.GetComponent<Text>().text = "CLEAR!!";
+            this.stateText.GetComponent<Text>().text = "Goal !!";
 
 
         }
@@ -154,7 +154,7 @@ public class skiercontroller2 : MonoBehaviour
                //  if (other.gameObject.tag == "CoinTag")
 
 
-            //こぶ　に衝突した場合（追加）
+            //こぶ　に衝突した場合（追加） ***
             if (other.gameObject.tag == "kobugetpoint")
             {
 
