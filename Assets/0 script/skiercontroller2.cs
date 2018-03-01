@@ -167,6 +167,9 @@ public class skiercontroller2 : MonoBehaviour
             // スコアを加算(追加)
             this.score += 10;
 
+            Debug.Log("Hi  hello4");
+
+
             //ScoreText獲得した点数を表示(追加)
             this.scoreText.GetComponent<Text>().text = "Score " + this.score + "pt";
 
