@@ -43,8 +43,10 @@ public class nanamenikaatu2 : MonoBehaviour {
         // スペースを押した時にy軸に正の方向に力を加える
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            // こちらの値は動きに合わせて調整してください
-            yVec = 5;
+            // こちらの値は動きに合わせて調整してください  *****
+            //  yVec = 5;
+            yVec = 100;
+
         }
 
         this.myRigidbody.AddForce(new Vector3(xVec, yVec, -1.0f) * this.forwardForce);

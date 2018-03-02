@@ -20,21 +20,21 @@ public class skiItemgenerator : MonoBehaviour {
    // private int startPos = -160;
 
     //スタート地点
-    private int startPos = -3513;
+  //  private int startPos = -3513        ;
 
 
     //ゴール地点
     //private int goalPos = 120;
 
     //ゴール地点
-    private int goalPos = 6487;
+ //   private int goalPos = 6487;
 
 
     //アイテムを出すx方向の範囲
   //  private float posRange = 3.4f;
 
     //アイテムを出すx方向の範囲
-    private float posRange = 4000f;
+   // private float posRange = 4000f;
 
 
     // Use this for initialization
