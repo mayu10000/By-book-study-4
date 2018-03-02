@@ -45,7 +45,13 @@ public class accel : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("coin"))
-        {
+       
+        
+        // ******
+
+       //   if (other.CompareTag("smalljump"))
+
+            {
             Destroy(other.gameObject);
             AudioSource.PlayClipAtPoint(coinGet, transform.position);
 
@@ -53,7 +59,11 @@ public class accel : MonoBehaviour
             //  条件　２
 
         }
-        else if (other.CompareTag("Accel"))
+            //  else if (other.CompareTag("Accel"))
+
+        // *****
+            else if (other.CompareTag("smalljump"))
+
         {
             rb.AddForce(new Vector3(0, 10, 30), ForceMode.VelocityChange);
             AudioSource.PlayClipAtPoint(accelPoint, transform.position);

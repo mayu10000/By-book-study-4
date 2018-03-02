@@ -17,6 +17,7 @@ TagManager:
   - jumpstage
   - kobugetpoint
   - GoalKusudama
+  - treestopping
   layers:
   - Default
   - TransparentFX
