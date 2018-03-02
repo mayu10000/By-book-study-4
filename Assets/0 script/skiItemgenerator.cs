@@ -13,15 +13,29 @@ public class skiItemgenerator : MonoBehaviour {
     // public GameObject conePrefab;
 
     // ***** treegreenstoppingPrefabを入れる *****
-    public GameObject treegreenstoppingPrefab;
+    public GameObject treestopFBXprefab;
 
     
     //スタート地点
-    private int startPos = -160;
+   // private int startPos = -160;
+
+    //スタート地点
+    private int startPos = -3513;
+
+
     //ゴール地点
-    private int goalPos = 120;
+    //private int goalPos = 120;
+
+    //ゴール地点
+    private int goalPos = 6487;
+
+
     //アイテムを出すx方向の範囲
-    private float posRange = 3.4f;
+  //  private float posRange = 3.4f;
+
+    //アイテムを出すx方向の範囲
+    private float posRange = 4000f;
+
 
     // Use this for initialization
     void Start()
@@ -45,10 +59,11 @@ public class skiItemgenerator : MonoBehaviour {
                    
                   // *****
 
-                    GameObject cone = Instantiate(treegreenstoppingPrefabFBX) as GameObject;
+                    GameObject treestopFBX = Instantiate(treestopFBXprefab) as GameObject;
+                   
                  //   treegreenstopping.transform.position = new Vector3(4 * j, treegreenstopping.transform.position.y, i);
 
-                    treegreenstoppingPrefab.transform.position = new Vector3(4 * j, treegreenstoppingPrefab.transform.position.y, i);
+                    treestopFBXprefab.transform.position = new Vector3(4 * j, treestopFBXprefab.transform.position.y, i);
 
                 }
             }

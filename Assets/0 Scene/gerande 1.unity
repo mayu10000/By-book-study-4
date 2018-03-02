@@ -5073,7 +5073,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1198217423249974, guid: fe485dc2ae049e341a87ee86bda3682b, type: 2}
       propertyPath: m_Name
-      value: treegreenstoppingFBX
+      value: treestopFBX
       objectReference: {fileID: 0}
     - target: {fileID: 1198217423249974, guid: fe485dc2ae049e341a87ee86bda3682b, type: 2}
       propertyPath: m_TagString
@@ -5619,6 +5619,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1428566465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1428566461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 868afee5d3b878c4680c4316d5f79005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1428566466 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4752374692735412, guid: fe485dc2ae049e341a87ee86bda3682b,
