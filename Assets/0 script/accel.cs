@@ -59,10 +59,10 @@ public class accel : MonoBehaviour
             //  条件　２
 
         }
-            //  else if (other.CompareTag("Accel"))
+            else if (other.CompareTag("Accel"))
 
         // *****
-            else if (other.CompareTag("smalljump"))
+         //   else if (other.CompareTag("jumpstage"))
 
         {
             rb.AddForce(new Vector3(0, 10, 30), ForceMode.VelocityChange);
