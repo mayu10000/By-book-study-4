@@ -18,6 +18,7 @@ TagManager:
   - kobugetpoint
   - GoalKusudama
   - treestopping
+  - treelosepoint
   layers:
   - Default
   - TransparentFX

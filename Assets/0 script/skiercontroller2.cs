@@ -148,22 +148,21 @@ public class skiercontroller2 : MonoBehaviour
 
         }
 
-        Debug.Log("Hi  hello3" ) ;
+        Debug.Log("Hi  hello3");
 
-              //コインに衝突した場合（追加）
-               //  if (other.gameObject.tag == "CoinTag")
+        //コインに衝突した場合（追加）
+        //  if (other.gameObject.tag == "CoinTag")
 
 
-            //こぶ　に衝突した場合（追加） ***
-            if (other.gameObject.tag == "kobugetpoint")
-            {
-
+        //こぶ　に衝突した場合（追加） ***
+        if (other.gameObject.tag == "kobugetpoint")
+        {
 
 
             //パーティクルを再生（追加）
-        //    GetComponent<ParticleSystem>().Play();
+       //     GetComponent<ParticleSystem>().Play();
 
-            
+
             // スコアを加算(追加)
             this.score += 10;
 
@@ -177,7 +176,38 @@ public class skiercontroller2 : MonoBehaviour
 
             //接触したコインのオブジェクトを破棄（追加）
             Destroy(other.gameObject);
-        }
-    }
 
+        }
+
+        //木　に衝突した場合（追加） ***
+        if (other.gameObject.tag == "treelosepoint")
+        {
+
+            //パーティクルを再生（追加）
+            GetComponent<ParticleSystem>().Play();
+
+
+            // スコアを加算(追加)
+            this.score -= 15;
+
+            Debug.Log("Hi  hello5");
+
+
+            //ScoreText獲得した点数を表示(追加)
+            this.scoreText.GetComponent<Text>().text = "Score " + this.score + "pt";
+
+
+
+            //接触したコインのオブジェクトを破棄（追加）
+            Destroy(other.gameObject);
+
+        }
+
+    }
 }
+
+                
+                
+
+
+            
