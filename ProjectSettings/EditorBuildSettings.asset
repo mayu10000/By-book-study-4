@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/0 Scene/skimountainTerrin3  bigMt.unity
+    guid: 182b4c62fd81df74a95c41a927b46260
+  - enabled: 1
+    path: Assets/0 Scene/gerande 1.unity
+    guid: 8f3cfd4745e24b446aea9790e199f105
