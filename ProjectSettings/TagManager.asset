@@ -17,7 +17,6 @@ TagManager:
   - jumpstage
   - kobugetpoint
   - GoalKusudama
-  - treestopping
   - treelosepoint
   layers:
   - Default

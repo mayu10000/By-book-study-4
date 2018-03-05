@@ -166,7 +166,7 @@ public class skiercontroller2 : MonoBehaviour
 
 
             //パーティクルを再生（追加）
-       //     GetComponent<ParticleSystem>().Play();
+           GetComponent<ParticleSystem>().Play();
 
 
             // スコアを加算(追加)
