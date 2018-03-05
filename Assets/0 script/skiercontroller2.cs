@@ -26,10 +26,16 @@ public class skiercontroller2 : MonoBehaviour
     //private float forwardForce = 800.0f;
 
     //左右に移動するための力（追加）
-    private float turnForce = 500.0f;
+   // private float turnForce = 500.0f;
+
+   //*****
+       private float turnForce = 800.0f;
 
     //ジャンプするための力（追加）
-    private float upForce = 500.0f;
+    //private float upForce = 500.0f;
+
+    //*****
+    private float upForce = 700.0f;
 
 
     //左右の移動できる範囲（追加）
