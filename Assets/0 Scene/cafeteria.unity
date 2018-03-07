@@ -2019,6 +2019,7 @@ GameObject:
   m_Component:
   - component: {fileID: 623485177}
   - component: {fileID: 623485176}
+  - component: {fileID: 623485178}
   m_Layer: 0
   m_Name: donburi 2 udon
   m_TagString: Untagged
@@ -2059,6 +2060,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623485178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 623485175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77588d2bb0acce84fa9ddc88454a0618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startPoint: {fileID: 623485177}
+  m_destinationPoint: {fileID: 2120379982}
+  m_speed: 10
+  m_margin: 0.1
 --- !u!1 &626409804
 GameObject:
   m_ObjectHideFlags: 0
@@ -4892,7 +4908,7 @@ GameObject:
   - component: {fileID: 1605002489}
   - component: {fileID: 1605002488}
   m_Layer: 5
-  m_Name: "Button\u3000(1)"
+  m_Name: "udon\u3000Button"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4955,7 +4971,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1605002489}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 623485175}
+        m_MethodName: 
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2120379982}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1605002489
@@ -6850,7 +6877,7 @@ GameObject:
   - component: {fileID: 2120379984}
   - component: {fileID: 2120379983}
   m_Layer: 0
-  m_Name: "\u958B\u3044\u305F\u7DDA\u5F62\u72B6\u306E\u56DE\u8EE2\u4F53"
+  m_Name: "tray\u3000udon   \u958B\u3044\u305F\u7DDA\u5F62\u72B6\u306E\u56DE\u8EE2\u4F53"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

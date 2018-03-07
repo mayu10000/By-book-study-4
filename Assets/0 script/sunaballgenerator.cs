@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class sunaballgenerator : MonoBehaviour {
 
-    public GameObject applePrefab;
+    // public GameObject applePrefab;
+
+    public GameObject redballPrefab;
+
     public GameObject bombPrefab;
     float span = 1.0f;
     float delta = 0;
@@ -33,7 +36,10 @@ public class sunaballgenerator : MonoBehaviour {
 	void Update () {
 
 
-        this.delta += Time.deltaTime;
+       // this.delta += Time.deltaTime;
+
+        this.delta += Time.deltaTime / 10 ;
+
         if (this.delta > this.span)
         {
             this.delta = 0;
@@ -50,9 +56,12 @@ public class sunaballgenerator : MonoBehaviour {
             }
             else
             {
-                item = Instantiate(applePrefab) as GameObject;
+             //   item = Instantiate(applePrefab) as GameObject;
+                
+                item = Instantiate(redballPrefab) as GameObject;
             }
 
+            redballPrefab.transform.position = new　Vector3(-5315, 2, 476) ;
 
 
 

@@ -17,13 +17,14 @@ public class skiercontroller2 : MonoBehaviour
 
     //  Animator animator　;
 
-
-
-
-
+        
 
     //前進するための力（追加）
     //private float forwardForce = 800.0f;
+
+
+
+
 
     //左右に移動するための力（追加）
    // private float turnForce = 500.0f;
@@ -63,6 +64,10 @@ public class skiercontroller2 : MonoBehaviour
     private bool isLButtonDown = false;
     //右ボタン押下の判定（追加）
     private bool isRButtonDown = false;
+
+
+    //  追加　Quit　ボタンのため
+    public GameObject menuObj;
 
 
     // Use this for initialization
@@ -166,7 +171,7 @@ public class skiercontroller2 : MonoBehaviour
 
 
             //パーティクルを再生（追加）
-     //      GetComponent<ParticleSystem>().Play();
+           GetComponent<ParticleSystem>().Play();
 
 
             // スコアを加算(追加)
@@ -190,7 +195,7 @@ public class skiercontroller2 : MonoBehaviour
         {
 
             //パーティクルを再生（追加）
-    //        GetComponent<ParticleSystem>().Play();
+            GetComponent<ParticleSystem>().Play();
 
 
             // スコアを加算(追加)
@@ -208,6 +213,36 @@ public class skiercontroller2 : MonoBehaviour
             Destroy(other.gameObject);
 
         }
+
+        // 追加　ボタン　Quit のため　ここから　
+
+        if (other.gameObject.tag == "GoalKusudama")
+        {
+            menuObj.SetActive(true);
+
+        }
+
+    }
+
+    // Quitボタンを押した時の処理
+    public void Quit()
+    {
+        // ゲームを終了する
+        Application.Quit();
+    }
+
+    // リスタートボタンを押した時の処理
+    //public void Restart()
+
+
+        public void Replay()
+    {
+        // ここで違うUIを表示する
+        // 使う関数はSetActiveです
+        // GameObjectの変数.SetActive(true); で表示
+        // GameObjectの変数.SetActive(false); で非表示
+
+        // ここまで
 
     }
 }
