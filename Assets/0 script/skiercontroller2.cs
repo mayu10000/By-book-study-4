@@ -70,6 +70,9 @@ public class skiercontroller2 : MonoBehaviour
     public GameObject menuObj;
 
 
+    //  追加　ボタン　リフトに乗りますか？
+      public GameObject liftObj;
+
     // Use this for initialization
     void Start()
     {
@@ -235,17 +238,44 @@ public class skiercontroller2 : MonoBehaviour
     //public void Restart()
 
 
-        public void Replay()
+    public void Replay()
     {
         // ここで違うUIを表示する
+
+        Debug.Log("リプレイする")　;
+
+  //      liftObj.SetActive(true);
+
+    }
+
         // 使う関数はSetActiveです
         // GameObjectの変数.SetActive(true); で表示
         // GameObjectの変数.SetActive(false); で非表示
 
+        //  if (other.gameObject.tag == "GoalKusudama")
+        //  Replay  ボタン　が押されたら
+
+
+        // リフトに乗る　ボタンを押すと
+     public void liftButtonDown ()
+
+   
+    {
+
+
+
+     //   MoveFromToControllersuzuki　を on にする
+
+
+
+    }
+         
+
+
         // ここまで
 
     }
-}
+
 
                 
                 

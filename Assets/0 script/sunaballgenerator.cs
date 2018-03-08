@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class sunaballgenerator : MonoBehaviour {
 
+
+
     // public GameObject applePrefab;
 
     public GameObject redballPrefab;
+
+    private object redball;
 
     public GameObject bombPrefab;
     float span = 1.0f;
@@ -15,6 +19,8 @@ public class sunaballgenerator : MonoBehaviour {
     int ratio = 2;
 
     float speed = -0.03f;
+
+   
 
     public void SetParameter(float span, float speed, int ratio)
     {
@@ -49,19 +55,24 @@ public class sunaballgenerator : MonoBehaviour {
 
 
             GameObject item;
-            int dice = Random.Range(1, 11);
-            if (dice <= this.ratio)
-            {
-                item = Instantiate(bombPrefab) as GameObject;
-            }
-            else
-            {
+
+          //  int dice = Random.Range(1, 11);
+           // if (dice <= this.ratio)
+           //  {
+          //      item = Instantiate(bombPrefab) as GameObject;
+          //  }
+          //  else
+          //  
              //   item = Instantiate(applePrefab) as GameObject;
                 
-                item = Instantiate(redballPrefab) as GameObject;
-            }
+              //  item = Instantiate(redballPrefab) as GameObject;
+           // }
 
-            redballPrefab.transform.position = new　Vector3(-5315, 2, 476) ;
+            item = Instantiate(redballPrefab) as GameObject;
+
+          //  redballPrefab.transform.position = new　Vector3(-5315, 2, 476) ;
+
+            item.transform.position = new Vector3(-5315, 2, 476);
 
 
 

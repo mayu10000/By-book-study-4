@@ -597,7 +597,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8059dbe2b35b7c49aab97030f34cca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redballPrefab: {fileID: 0}
+  redballPrefab: {fileID: 1305069464197366, guid: a19035a29e85579459e9a629752f5048,
+    type: 2}
   bombPrefab: {fileID: 0}
 --- !u!1 &688224216
 GameObject:
