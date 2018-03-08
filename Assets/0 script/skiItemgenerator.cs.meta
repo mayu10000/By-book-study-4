@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 754eb0d2b4a5230489323c06037d240d
+timeCreated: 1520519052
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - carPrefab: {instanceID: 0}
+  - coinPrefab: {instanceID: 0}
+  - conePrefab: {instanceID: 0}
+  - mountainkobuhankyuu3pointgetPrefab: {instanceID: 0}
+  - itemGenerateStartPos: {instanceID: 0}
+  - itemGenerateEndPos: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
