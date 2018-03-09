@@ -249,8 +249,8 @@ public class skiercontroller2 : MonoBehaviour
         //      liftObj.SetActive(true);
 
         //GameSceneを読み込む（追加）
-        SceneManager.LoadScene("GameScene");
-
+       // SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("gerande 1");
 
 
     }
