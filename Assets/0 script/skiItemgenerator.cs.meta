@@ -9,7 +9,8 @@ MonoImporter:
   - carPrefab: {instanceID: 0}
   - coinPrefab: {instanceID: 0}
   - conePrefab: {instanceID: 0}
-  - mountainkobuhankyuu3pointgetPrefab: {instanceID: 0}
+  - mountainkobuhankyuu3pointgetPrefab: {fileID: 1740173941298492, guid: 8d24cd348213eed4e8a63b19f7049ba4,
+      type: 2}
   - itemGenerateStartPos: {instanceID: 0}
   - itemGenerateEndPos: {instanceID: 0}
   executionOrder: 0

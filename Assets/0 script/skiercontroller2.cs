@@ -4,6 +4,8 @@ using UnityEngine;
 
 using UnityEngine.UI;
 
+using UnityEngine.SceneManagement; //（追加）
+
 
 //  public GameObject ;
 
@@ -244,7 +246,12 @@ public class skiercontroller2 : MonoBehaviour
 
         Debug.Log("リプレイする")　;
 
-  //      liftObj.SetActive(true);
+        //      liftObj.SetActive(true);
+
+        //GameSceneを読み込む（追加）
+        SceneManager.LoadScene("GameScene");
+
+
 
     }
 
