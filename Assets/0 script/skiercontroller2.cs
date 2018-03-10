@@ -250,7 +250,7 @@ public class skiercontroller2 : MonoBehaviour
 
         //GameSceneを読み込む（追加）
        // SceneManager.LoadScene("GameScene");
-        SceneManager.LoadScene("gerande 1");
+        SceneManager.LoadScene("gerande 2");
 
 
     }

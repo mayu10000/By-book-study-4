@@ -25,7 +25,7 @@ public class ToGerandeScenedirector : MonoBehaviour {
 
         {
            // SceneManager.LoadScene("GameScene");
-            SceneManager.LoadScene("gerande 1");
+            SceneManager.LoadScene("gerande 2");
 
         }
     }

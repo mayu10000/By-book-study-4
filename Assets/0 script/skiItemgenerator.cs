@@ -32,7 +32,7 @@ public class skiItemgenerator : MonoBehaviour
     {
         // for (int i = 0; i < 生成したいアイテム数; i++)
 
-        for (int i = 0; i < 20; i++)
+        for (int i = 0; i < 40; i++)
         {
             // var obj = Instantiate(生成したいオブジェクトのプレファブ) as GameObject;
 
