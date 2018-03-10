@@ -30,11 +30,13 @@ public class callButton : MonoBehaviour
 
     public void CallButton()
     {
+        callObj.SetActive(true);
 
+    }
 
         //    if (other.gameObject.tag == "GoalKusudama")
         //     {
-        callObj.SetActive(true);
+
 
         // Use this for initialization
         void Start() {
