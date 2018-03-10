@@ -45,7 +45,7 @@ public class MoveFromToControlleraki2 : MonoBehaviour {
             isArrived = true;
         }
 
-
+         
 
     }
 }
