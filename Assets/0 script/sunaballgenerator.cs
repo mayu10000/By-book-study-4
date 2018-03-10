@@ -72,17 +72,23 @@ public class sunaballgenerator : MonoBehaviour {
 
           //  redballPrefab.transform.position = new　Vector3(-5315, 2, 476) ;
 
-            item.transform.position = new Vector3(-5315, 2, 476);
+           // item.transform.position = new Vector3(-5315, 2, 476);
 
-
+            item.transform.position = GameObject.Find("Icosphere (10) toumei").transform.position;
 
             float x = Random.Range(-1, 2);
             float z = Random.Range(-1, 2);
 
-            item.transform.position = new Vector3(x, 4, z);
+          //  float x = Random.Range(1, 2);
+          //  float z = Random.Range(1, 2);
 
 
-          //  item.GetComponent<ItemController>().dropSpeed = this.speed;
+
+            //  item.transform.position = new Vector3(x, 4, z);
+
+            item.transform.position += new Vector3(x, 4, z);
+
+            //  item.GetComponent<ItemController>().dropSpeed = this.speed;
 
             item.GetComponent<sunaitemcontroller>().dropSpeed = this.speed;
 
