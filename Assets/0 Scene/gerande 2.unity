@@ -13204,7 +13204,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1720739464
+  randomSeed: -1673244236
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -21276,7 +21276,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1222261626}
   m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
-  m_LocalPosition: {x: -1520, y: -745, z: -7350}
+  m_LocalPosition: {x: -1520, y: -745.1, z: -7349.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -29454,6 +29454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1814934253}
   - component: {fileID: 1814934254}
+  - component: {fileID: 1814934255}
   m_Layer: 0
   m_Name: lifttwinFBX (1)  moving
   m_TagString: Untagged
@@ -29519,6 +29520,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1814934255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814934252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fda40743d30a8c64887f5a189d0ef8a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_startPoint: {fileID: 1305597004}
+  m_destinationPoint: {fileID: 189899604}
+  m_startPosition: {x: 0, y: 0, z: 0}
+  m_speed: 10
+  m_margin: 0.1
 --- !u!1 &1818905838
 GameObject:
   m_ObjectHideFlags: 0
@@ -32822,7 +32839,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2010768435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.56, y: 1.865, z: -3.3}
+  m_LocalPosition: {x: 2.56, y: 1.863, z: -2.609}
   m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
   m_Children: []
   m_Father: {fileID: 1916976244}
@@ -34181,7 +34198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &2085699976
 AudioListener:
   m_ObjectHideFlags: 0
